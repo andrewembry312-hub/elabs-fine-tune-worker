@@ -3,12 +3,18 @@
   "description": "Serverless fine-tuning of open-source LLMs with E-Labs Fine-Tune. Supports LoRA, QLoRA, DPO, SFT, and more using Hugging Face models and datasets. Powered by E-Labs AI Studio.",
   "type": "serverless",
   "category": "language",
-  "iconUrl": "",
+  "iconUrl": "https://pub-796a08821c1c483aaf5e274e0d0359f7.r2.dev/brand/elabs-fine-tune-hero.png",
   "config": {
     "runsOn": "GPU",
     "containerDiskInGb": 200,
     "gpuCount": 1,
-    "allowedCudaVersions": ["12.8", "12.7", "12.6", "12.5", "12.4"],
+    "allowedCudaVersions": [
+      "12.8",
+      "12.7",
+      "12.6",
+      "12.5",
+      "12.4"
+    ],
     "presets": [],
     "env": [
       {
@@ -39,10 +45,22 @@
           "description": "The format of the model weights to load.",
           "default": "auto",
           "options": [
-            {"label": "auto", "value": "auto"},
-            {"label": "pt", "value": "pt"},
-            {"label": "safetensors", "value": "safetensors"},
-            {"label": "bitsandbytes", "value": "bitsandbytes"}
+            {
+              "label": "auto",
+              "value": "auto"
+            },
+            {
+              "label": "pt",
+              "value": "pt"
+            },
+            {
+              "label": "safetensors",
+              "value": "safetensors"
+            },
+            {
+              "label": "bitsandbytes",
+              "value": "bitsandbytes"
+            }
           ],
           "advanced": true
         }
