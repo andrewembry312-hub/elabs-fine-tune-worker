@@ -2,7 +2,7 @@ name: Docker - Axolotl Fine-Tuning
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths-ignore: ['README.md', 'LICENSE', '.gitignore']
   workflow_dispatch:
 
