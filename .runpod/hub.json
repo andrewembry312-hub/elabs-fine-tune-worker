@@ -1,6 +1,6 @@
 {
-  "title": "E-Labs Fine-Tuning",
-  "description": "Serverless fine-tuning of open-source LLMs with Axolotl. Supports LoRA, QLoRA, DPO, SFT, and more using Hugging Face models and datasets. Powered by E-Labs AI Studio.",
+  "title": "E-Labs Fine-Tune Worker",
+  "description": "Serverless fine-tuning of open-source LLMs with E-Labs Fine-Tune. Supports LoRA, QLoRA, DPO, SFT, and more using Hugging Face models and datasets. Powered by E-Labs AI Studio.",
   "type": "serverless",
   "category": "language",
   "iconUrl": "",

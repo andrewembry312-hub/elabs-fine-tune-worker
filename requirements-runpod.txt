@@ -1,4 +1,4 @@
-# E-Labs Axolotl Fine-Tuning — Python Requirements
+# E-Labs Fine-Tune Worker — Python Requirements
 runpod~=1.7.0
 pyyaml>=6.0
 huggingface_hub>=0.25.0

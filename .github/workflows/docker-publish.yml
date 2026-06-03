@@ -1,4 +1,4 @@
-name: Docker - Axolotl Fine-Tuning
+name: Docker - Fine-Tune Worker
 
 on:
   push:
@@ -27,5 +27,5 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ghcr.io/andrewembry312-hub/axolotl-runpod-worker:latest
-            ghcr.io/andrewembry312-hub/axolotl-runpod-worker:${{ github.sha }}
+            ghcr.io/andrewembry312-hub/elabs-fine-tune-worker:latest
+            ghcr.io/andrewembry312-hub/elabs-fine-tune-worker:${{ github.sha }}

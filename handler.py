@@ -1,6 +1,6 @@
 \"\"\"
-E-Labs Fine-Tuning — RunPod Serverless Handler
-Powered by Axolotl — fine-tune any HuggingFace LLM with LoRA/QLoRA/DPO/SFT.
+E-Labs Fine-Tune Worker — RunPod Serverless Handler
+E-Labs Fine-Tune Worker — fine-tune any HuggingFace LLM with LoRA/QLoRA/DPO/SFT.
 \"\"\"
 
 import os, runpod, yaml
