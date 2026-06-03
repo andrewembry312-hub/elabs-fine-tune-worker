@@ -1,8 +1,14 @@
-FROM axolotlai/axolotl-cloud:main-py3.11-cu124-2.6.0
+FROM runpod/pytorch:2.8.0-py3.11-cuda12.8.1-cudnn-devel-ubuntu22.04
+LABEL maintainer="E-Labs AI Studio" description="E-Labs Fine-Tune Worker"
 
-COPY .runpod/requirements.txt /requirements.txt
-RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install --upgrade -r /requirements.txt
+ENV DEBIAN_FRONTEND=noninteractive PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+
+WORKDIR /workspace
+
+# Install axolotl from pip + requirements
+COPY .runpod/requirements.txt /tmp/requirements.txt
+RUN pip install --upgrade pip && \
+    pip install --upgrade -r /tmp/requirements.txt
 
 ARG BASE_VOLUME="/runpod-volume"
 ENV BASE_VOLUME=$BASE_VOLUME
