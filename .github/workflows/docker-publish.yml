@@ -27,7 +27,7 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ghcr.io/andrewembry312-hub/elabs-fine-tune-worker:latest
-            ghcr.io/andrewembry312-hub/elabs-fine-tune-worker:${{ github.sha }}
-          cache-from: type=registry,ref=ghcr.io/andrewembry312-hub/elabs-fine-tune-worker:latest
+            ghcr.io/elabs-ai/elabs-fine-tune-worker:latest
+            ghcr.io/elabs-ai/elabs-fine-tune-worker:${{ github.sha }}
+          cache-from: type=registry,ref=ghcr.io/elabs-ai/elabs-fine-tune-worker:latest
           cache-to: type=inline
