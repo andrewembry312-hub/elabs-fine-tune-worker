@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="https://pub-796a08821c1c483aaf5e274e0d0359f7.r2.dev/brand/elabs-fine-tune-hero.png" alt="E-Labs Fine-Tune Worker" width="800">
+  <img src="https://pub-796a08821c1c483aaf5e274e0d03e350.r2.dev/brand/elabs-fine-tune-hero.png" alt="E-Labs Fine-Tune Worker" width="800">
 </p>
 
 # E-Labs Fine-Tuning — RunPod Serverless Worker
