@@ -5,7 +5,7 @@
 
 # E-Labs Fine-Tune Worker
 
-[![Runpod](https://api.runpod.io/badge/andrewembry312-hub/elabs-fine-tune-worker)](https://console.runpod.io/hub/ELABS-AI/elabs-fine-tune-worker)
+[![Runpod](https://api.runpod.io/badge/ELABS-AI/elabs-fine-tune-worker)](https://console.runpod.io/hub/ELABS-AI/elabs-fine-tune-worker)
 
 Fine-tune any HuggingFace LLM on RunPod Serverless. Supports LoRA, QLoRA, DPO, SFT.
 
