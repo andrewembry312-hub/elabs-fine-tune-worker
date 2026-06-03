@@ -1,0 +1,3 @@
+# E-Labs Axolotl Fine-Tuning — RunPod dependencies
+runpod~=1.7.0
+pyyaml>=6.0

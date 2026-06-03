@@ -1,0 +1,52 @@
+{
+  "title": "E-Labs Fine-Tuning",
+  "description": "Serverless fine-tuning of open-source LLMs with Axolotl. Supports LoRA, QLoRA, DPO, SFT, and more using Hugging Face models and datasets. Powered by E-Labs AI Studio.",
+  "type": "serverless",
+  "category": "language",
+  "iconUrl": "",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 200,
+    "gpuCount": 1,
+    "allowedCudaVersions": ["12.8", "12.7", "12.6", "12.5", "12.4"],
+    "presets": [],
+    "env": [
+      {
+        "key": "TOKENIZER",
+        "input": {
+          "name": "Tokenizer",
+          "type": "string",
+          "description": "Name or path of the Hugging Face tokenizer to use.",
+          "default": "",
+          "advanced": true
+        }
+      },
+      {
+        "key": "MAX_NUM_SEQS",
+        "input": {
+          "name": "Max Num Seqs",
+          "type": "number",
+          "description": "Maximum number of sequences per iteration.",
+          "default": 256,
+          "advanced": true
+        }
+      },
+      {
+        "key": "LOAD_FORMAT",
+        "input": {
+          "name": "Load Format",
+          "type": "string",
+          "description": "The format of the model weights to load.",
+          "default": "auto",
+          "options": [
+            {"label": "auto", "value": "auto"},
+            {"label": "pt", "value": "pt"},
+            {"label": "safetensors", "value": "safetensors"},
+            {"label": "bitsandbytes", "value": "bitsandbytes"}
+          ],
+          "advanced": true
+        }
+      }
+    ]
+  }
+}

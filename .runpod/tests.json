@@ -1,0 +1,45 @@
+{
+  "tests": [
+    {
+      "name": "quick_smoke_test_sft",
+      "input": {
+        "user_id": "user",
+        "model_id": "llama-test",
+        "run_id": "smoke-test",
+        "credentials": {"wandb_api_key": "", "hf_token": ""},
+        "args": {
+          "base_model": "HuggingFaceTB/SmolLM2-135M",
+          "model_type": "AutoModelForCausalLM",
+          "tokenizer_type": "AutoTokenizer",
+          "load_in_4bit": true,
+          "strict": false,
+          "datasets": [{"path": "mhenrichsen/alpaca_2k_test", "type": "alpaca", "split": "train[:10%]"}],
+          "val_set_size": 0.02,
+          "output_dir": "./outputs/lora-out",
+          "sequence_len": 4096,
+          "sample_packing": true,
+          "eval_sample_packing": false,
+          "pad_to_sequence_len": true,
+          "adapter": "qlora",
+          "lora_r": 32,
+          "lora_alpha": 64,
+          "lora_dropout": 0.05,
+          "lora_target_modules": ["q_proj", "v_proj"],
+          "lora_modules_to_save": ["embed_tokens", "lm_head"],
+          "num_epochs": 1,
+          "max_steps": 5,
+          "micro_batch_size": 1,
+          "gradient_accumulation_steps": 1,
+          "warmup_steps": 1,
+          "eval_steps": 5,
+          "save_steps": 50,
+          "logging_steps": 1,
+          "learning_rate": 2e-4,
+          "lr_scheduler": "cosine",
+          "optimizer": "adamw_torch_fused",
+          "flash_attention": true
+        }
+      }
+    }
+  ]
+}

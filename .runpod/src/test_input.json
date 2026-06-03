@@ -1,0 +1,14 @@
+{
+  "input": {
+    "user_id": "elabs-test",
+    "model_id": "llama-test",
+    "run_id": "elabs-smoke-001",
+    "credentials": {},
+    "args": {
+      "base_model": "HuggingFaceTB/SmolLM2-135M",
+      "output_dir": "./outputs/test",
+      "max_steps": 2,
+      "micro_batch_size": 1
+    }
+  }
+}
