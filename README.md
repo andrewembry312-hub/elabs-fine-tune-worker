@@ -55,3 +55,6 @@ Fine-tune any HuggingFace LLM using **Axolotl** on RunPod Serverless. Supports L
 ## License
 
 Apache 2.0 — E-Labs AI Studio
+
+---
+Based on [Axolotl](https://github.com/axolotl-ai-cloud/axolotl), Apache 2.0. Modifications by E-Labs AI Studio.
